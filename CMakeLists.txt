@@ -19,4 +19,4 @@ add_executable(example ${iothub_c_files})
 set_target_properties(example PROPERTIES OUTPUT_NAME "example") 
 
 # List the libraries required by the link step
-target_link_libraries(example iothub_client prov_auth_client hsm_security_client prov_http_transport aziotsharedutil iothub_client_mqtt_transport umqtt ssl crypto curl pthread parson m)
+target_link_libraries(example iothub_client prov_auth_client hsm_security_client prov_device_ll_client prov_http_transport aziotsharedutil iothub_client_mqtt_transport umqtt ssl crypto curl pthread parson m)
